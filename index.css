@@ -1,0 +1,798 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headerNavigation1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.headerLogo {
+  width: 170px;
+  height: 38px;
+}
+
+.headerSearch {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.firstPhoto {
+  height: 630px;
+  width: 100%;
+
+}
+
+.cartCount{
+    position: absolute;
+    top: 23px;
+    background-color: black;
+    color: white;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+ }
+
+.middleFeatures {
+  margin-bottom: 50px;
+}
+
+.perfumeMiddle {
+  font-family: "Bitter";
+  font-weight: 400;
+  margin-top: 40px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.perfumeProperties {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.secondPhoto {
+    height: 630px;
+    width: 100%;
+    background-image: url(./images/Photo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.photoDetails {
+  max-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left:50px;
+  padding-left: 20px;
+}
+
+.photoDetailsHeading {
+  font-size: 35px;
+  margin-bottom: 18px;
+}
+
+.photoDetailsParagraph {
+  font-size: 22px;
+  padding-left: 5px;
+  max-width: 80%;
+}
+
+.photoDetailsButton {
+  margin-left: 10px;
+  margin-top: 23px;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  width: 150px;
+  outline: none;
+  border:none;
+  cursor:pointer
+}
+
+/* .freeShipping {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+
+.freeShippingList {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  height: 100px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.freeShippingList li{
+    position: relative;
+
+}
+.freeShippingList li::after{
+    content: "";
+    position: absolute;
+    left: -25px;
+    background: #00BACF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    height:16px;
+    width:16px;
+    top:5.5px;
+    border-radius: 50%;
+}
+.freeShippingList li:first-child::after{
+    content: "";
+    display:none;
+}
+.discount {
+  text-decoration: line-through;
+  color: red;
+}
+
+.BestProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cartItemImage {
+  width: 90%;
+  height: 250px;
+}
+
+.cartHeader {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.cartButton {
+  font-size: 20px;
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.thirdPhoto {
+  
+  height: 630px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.photoDetails1 {
+  padding-top: 14%;
+  padding-left: 12%;
+  width: 44%;
+}
+
+.cartItem1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.cartHeader2 {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.cartItemImage2 {
+  height: 250px;
+}
+
+.youtubeAdd {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* height: 658px; */
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.youtubeAdd1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.youtubeimagePhoto1 {
+  height: 500px;
+}
+
+.youtubeimagePhoto2 {
+  /* height: 30%; */
+  height: 240px;
+}
+
+.celebrities {
+}
+
+.celebritiesClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.celebritiesImage {
+  width: 23%;
+  /* height: 200px; */
+}
+
+#logo {
+  background-image: url("./images/Photo4.png");
+  height: 150px;
+}
+.hambargar,.closeBtn {
+  display:none;
+}
+.allLogo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo-item {
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+}
+
+.logoHeader {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+
+.advertisment {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.advertisment-item {
+  width: 350px;
+  height: 430px;
+  margin: 10px;
+}
+
+.advertisment-image {
+  width: 350px;
+  height: 320px;
+}
+
+.advertisment-item1 {
+  width: 350px;
+  height: 430px;
+  background-color: #e6f0f2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.advertisment-item1 p {
+  width: 280px;
+}
+
+.advertisment1Button {
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  width: 130px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 3px;
+}
+.advertismentParagraph {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.advertismentButton {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  width: 130px;
+  border-radius: 2px;
+}
+
+.advertismentImage {
+  width: 500px;
+  height: 320px;
+}
+
+.advertismentParagraph1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+.advertisment1 {
+  display: flex;
+  margin: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+   flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 300px;
+}
+
+.footerItem1 {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* height: 200px; */
+  padding-top: 50px;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footerItem2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footerItem2Content {
+  /* width: 45%;
+    align-items: center; */
+  /* width: 600px; */
+  width: 800px;
+}
+
+.footerItem2Content2 {
+}
+
+.gap {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footerInput {
+  margin-top: 10px;
+  height: 24px;
+}
+
+.footerButton {
+  margin-top: 10px;
+  font-size: 18px;
+  width: 121px;
+  height: 24px;
+  border-radius: 3px;
+  background-color: #27808e;
+}
+
+.navbarCenter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.perfume__item {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.perfume__item img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+.details {
+  max-width: 290px;
+}
+.details h4 {
+  font-family: "Bitter";
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.youtubeSecond{
+    /* display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap:20px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width:1150px) {
+
+/* .freeShippingList{
+    font-size: 10px;
+} */
+
+.youtubeimagePhoto1{
+    height: 450px;
+    margin: 10px;
+}
+
+.youtubeimagePhoto2 {
+    /* height: 30%; */
+    height: 210px;
+    margin: 10px;
+  }
+
+
+
+  .advertisment-item {
+    width: 280px;
+    height: 350px;
+    margin: 10px;
+  }
+  
+  .advertisment-image {
+    width: 300px;
+    height: 250px;
+  }
+  
+  .advertisment-item1 {
+    width: 280px;
+    height: 350px;
+    background-color: #e6f0f2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .advertismentImage {
+    width: 380px;
+    height: 250px;
+  }
+  
+
+}
+
+@media screen and (max-width:1000px) {
+
+   
+
+    .perfumeMiddle{
+        font-size: 30px;
+    }
+
+    .perfume__item {
+       
+        margin: 12px;
+      }
+      .perfume__item img {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+      }
+
+      .youtubeimagePhoto1 {
+        height: 330px;
+        width: 350px;
+      }
+
+      .youtubeimagePhoto2 {
+        /* height: 30%; */
+        height: 150px;
+        width: 300px;
+      }
+
+      .advertisment-item {
+        width: 200px;
+        height: 280px;
+        margin: 10px;
+      }
+      
+      .advertisment-image {
+        width: 200px;
+        height: 200px;
+      }
+      
+      .advertisment-item1 {
+        width: 200px;
+        height: 250px;
+        background-color: #e6f0f2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .advertismentParagraph {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+      }
+
+      .btn {
+        background-color: #000;
+        color: #fff;
+        font-size: 10px;
+        padding: 3px 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        text-transform: capitalize;
+        border-radius: 3px;
+      }
+ 
+      .advertisment-item1{
+        width: 200px;
+        height: 250px;
+        background-color: #e6f0f2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+      }
+
+      .advertisment-item1  h1{
+        font-size: 15px;
+      }
+
+      .advertisment-item1 p{
+        font-size: 10px;
+        max-width: 160px;
+      }
+
+      .firstPhoto {
+        height: 530px;
+        width: 100%;
+      
+      }
+
+}
+
+
+@media screen and (max-width:900px){
+  .hambargar {
+    display:block;
+    position: absolute;
+    left: 10px;
+    width:24px;
+    height:24px;
+    cursor: pointer;
+  }
+  .headerNavigation1 {
+    position:absolute;
+    left:-250%;
+  }
+  .headerSearch{
+    position: absolute;
+    right: 40px;
+  }
+  .cartCount{
+    top:-10px;
+  }
+  .header__active .headerNavigation1{
+    display:flex;
+    left :0;
+    flex-direction:column;
+    background-color: #fff;
+    z-index: 99;
+    width:100%;
+    justify-content: initial;
+    gap:15px;
+    padding: 10px 30px;
+    top:0;
+  }
+  .header__active .closeBtn{
+    position: absolute;
+    left: calc(100% - 100px);
+    top:5px;
+    display: block;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:800px) {
+   .photoDetailsHeading {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .photoDetailsParagraph {
+    /* font-size: 10px; */
+    padding-left: 5px;
+    max-width: 80%;
+  }
+  .photoDetails {
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:25px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  .photoDetailsButton {
+    margin-left: 10px;
+    margin-top: 23px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    width: 70px;
+    outline: none;
+    border:none;
+    cursor:pointer
+  }
+
+  .freeShippingList {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .freeShippingList li{
+      position: relative;
+  
+  }
+  .freeShippingList li::after{
+      content: "";
+      position: absolute;
+      left: -20px;
+      background: #00BACF;
+      box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+      height:16px;
+      width:16px;
+      top:5.5px;
+      border-radius: 50%;
+  }
+
+  .youtubeimagePhoto1 {
+    height: 220px;
+    width: 250px;
+  }
+
+  .youtubeimagePhoto2 {
+    /* height: 30%; */
+    height: 100px;
+    width: 200px;
+  }
+  
+  .footer{
+    height: auto;
+  }
+
+  .firstPhoto {
+    height: 330px;
+    width: 100%;
+  
+  }
+  .footerItem2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+
+.youtubeAdd {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  .youtubeimagePhoto1 {
+    height: 220px;
+    width: 250px;
+  }
+
+  .youtubeimagePhoto2 {
+   
+    height: 220px;
+    width: 250px;
+  }
+
+  .footerItem1 {
+    display: flex;
+    justify-content: space-evenly;
+   
+   flex-direction: column;
+    gap: 20px;
+    
+    align-items: center;
+    height: auto;
+  }
+
+  .footer{
+    height: auto;
+  }
+
+ 
+
+
+}

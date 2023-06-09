@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- hamburger icon -->
+      <svg
+      class="hambargar"
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 1024 1024"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"
+        ></path>
+      </svg>
+      
+      <img src="./images/logo-photo.png" class="headerLogo" alt="logo-photo" />
+
+      <ul class="headerNavigation1" type="none">
+        <li><a href="">HOME</a></li>
+        <li><a href="#shop">SHOP</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#footer">CONTACT US</a></li>
+        <li><a class="closeBtn" href="#footer">&times;</a></li>
+      </ul>
+
+      <ul class="headerSearch" type="none">
+        <li><img src="./images/searchCart.png" alt="image" /></li>
+        <li>
+          <img src="./images/cartImage.jpeg" alt="image" /><span
+            class="cartCount"
+            >0</span
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <img src="./images/Photo1.png" class="firstPhoto" alt="image" />
+
+      <div class="middleFeatures">
+        <h2 class="perfumeMiddle">Discover The Magic Of Upsilon Perfumes</h2>
+
+        <div class="perfumeProperties">
+          <div class="perfume__item">
+            <img src="./images/perfumeProperties 1.png" alt="image" />
+
+            <div class="details">
+              <h4>Long Lasting</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate iure tempore perspiciatis autem tenetur.
+              </p>
+            </div>
+          </div>
+          <div class="perfume__item">
+            <img src="./images/perFumeProperties2.jpeg" alt="image" />
+            <div class="details">
+              <h4>Everday</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate iure tempore perspiciatis autem tenetur.
+              </p>
+            </div>
+          </div>
+          <div class="perfume__item">
+            <img src="./images/perfumePeoperties3.jpeg" alt="image" />
+            <div class="details">
+              <div class="details">
+                <h4>Authentic Raw Material</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate iure tempore perspiciatis autem tenetur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondPhoto" id="about">
+        <div class="photoDetails">
+          <h6 class="photoDetailsHeading">Own Your Story With Upsilon</h6>
+          <p class="photoDetailsParagraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            quas, iure molestias repellendus cum obcaecati temporibus, quae
+            debitis aperiam mollitia nesciunt laboriosam, reprehenderit nisi?
+            Explicabo, in. Culpa eveniet tempora quis?
+          </p>
+
+          <button class="photoDetailsButton">About Us</button>
+        </div>
+      </div>
+
+      <ul class="freeShippingList">
+        <li><h2>Free Shipping on orders over $30</h2></li>
+        <li><h2>Made In India</h2></li>
+        <li><h2>Proven Efficacy</h2></li>
+        <li><h2>Wide Range of Frangrance</h2></li>
+        <li><h2>Free</h2></li>
+      </ul>
+      <div class="cart" id="shop">
+        <h1 class="cartHeader">Our Best Selling Perfume</h1>
+
+        <div class="cartItem">
+          <div class="BestProduct">
+            <img
+              src="./images/bestPerfume1.png"
+              class="cartItemImage"
+              alt="image"
+            />
+            <h3>Upsilon wild Blue Sports</h3>
+            <p>Rs. 1,369.00 <span class="discount">Rs. 1599.00</span></p>
+            <button class="cartButton" onclick="increaseCount()">
+              Add to cart
+            </button>
+          </div>
+          <div class="BestProduct">
+            <img
+              src="./images/bestPerfume2.png"
+              class="cartItemImage"
+              alt="image"
+            />
+            <h3>Upsilon Goldern Sand Sports</h3>
+            <p>Rs. 1,369.00 <span class="discount">Rs. 1599.00</span></p>
+            <button class="cartButton" onclick="increaseCount()">
+              Add to cart
+            </button>
+          </div>
+          <div class="BestProduct">
+            <img
+              src="./images/bestPerfume3.png"
+              class="cartItemImage"
+              alt="image"
+            />
+            <h3>Upsilon Shooting Star Sports</h3>
+            <p>Rs. 1,369.00 <span class="discount">Rs. 1599.00</span></p>
+            <button class="cartButton" onclick="increaseCount()">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="secondPhoto"
+        style="background-image: url(./images/Photo3.png)"
+      >
+        <div class="photoDetails">
+          <h6 class="photoDetailsHeading">What Makes our Perfume Special ?</h6>
+          <p class="photoDetailsParagraph">
+            Upsilon is a perfect blend of reality and relatability that puts you
+            in the spotlight. In a world where people shy away from their true
+            self and keep wondering about the ‘what ifs’, Upsilon acts as an
+            enabler which instils a sense of confidence. Our philosophy aims at
+            encouraging you to embrace your individuality and own your story.
+          </p>
+        </div>
+      </div>
+
+      <div class="cart">
+        <h1 class="cartHeader2">Our Best Combo</h1>
+
+        <div class="cartItem1">
+          <div class="BestProduct">
+            <img src="./images/combo1.png" class="cartItemImage2" alt="image" />
+            <h3>Upsilon wild Blue Sports</h3>
+            <p>Rs. 1,369.00 <span class="discount">Rs. 1599.00</span></p>
+            <button class="cartButton" onclick="increaseCount()">
+              Add to cart
+            </button>
+          </div>
+          <div class="BestProduct">
+            <img src="./images/combo2.png" class="cartItemImage2" alt="image" />
+            <h3>Upsilon Goldern Sand Sports</h3>
+            <p>Rs. 1,369.00 <span class="discount">Rs. 1599.00</span></p>
+            <button class="cartButton" onclick="increaseCount()">
+              Add to cart
+            </button>
+          </div>
+          <div class="BestProduct">
+            <img src="./images/combo3.png" class="cartItemImage2" alt="image" />
+            <h3>Upsilon Shooting Star Sports</h3>
+            <p>Rs. 1,369.00 <span class="discount">Rs. 1599.00</span></p>
+            <button class="cartButton" onclick="increaseCount()">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="cartHeader2">Digital Ads</h1>
+
+      <div class="youtubeAdd">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/4g9qKNcS7AI"
+          class="youtubeimagePhoto1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="youtubeAdd1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/y9d733LwqmE"
+            class="youtubeimagePhoto2"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/kJSyVeiK2kQ"
+            class="youtubeimagePhoto2"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div id="celebrities">
+        <h1 class="cartHeader2">Influencer Collabs</h1>
+
+        <div class="celebritiesClass">
+          <img
+            src="./images/celebrities1.png"
+            class="celebritiesImage"
+            alt="image"
+          />
+
+          <img
+            src="./images/celebrities2.png"
+            class="celebritiesImage"
+            alt="image"
+          />
+
+          <img
+            src="./images/celebrities3.png"
+            class="celebritiesImage"
+            alt="image"
+          />
+        </div>
+      </div>
+
+      <div id="logo">
+        <h2 class="logoHeader">We Are Available On</h2>
+
+        <div class="allLogo">
+          <img src="./images/Amazon_logo1.png" class="logo-item" alt="image" />
+          <img src="./images/Flipkart-logo.png" class="logo-item" alt="image" />
+          <img src="./images/Myntra_logo.png" class="logo-item" alt="image" />
+          <img src="./images/NYKAA.png" class="logo-item" alt="image" />
+        </div>
+      </div>
+
+      <div class="advertisment" id="blog">
+        <div class="advertisment-item">
+          <img
+            src="./images/advertisment1.png"
+            class="advertisment-image"
+            alt="image"
+          />
+          <p class="advertismentParagraph">
+            Best Perfume for Night Party that Lasts Long Perfume is an integral
+            part of an individuals personality. It is said that one's fragrance
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+        <div class="advertisment-item1">
+          <h1>Blog Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+            eaque veritatis suscipit, impedit quisquam sint pariatur illum?
+            Necessitati.
+          </p>
+          <button class="btn">view all</button>
+        </div>
+        <div class="advertisment-item">
+          <img
+            src="./images//advertisement2.png"
+            class="advertisment-image"
+            alt="image"
+          />
+          <p class="advertismentParagraph">
+            Best Perfume for Night Party that Lasts Long Perfume is an integral
+            part of an individuals personality. It is said that one's fragrance
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+
+      <div class="advertisment1">
+        <div>
+          <img
+            src="./images/advertisement3.png"
+            class="advertismentImage"
+            alt="image"
+            srcset=""
+          />
+          <p class="advertismentParagraph1">
+            Best Perfume for Night Party that Lasts Long Perfume is an integral
+            part of an individuals personality. It is said that one's fragrance
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+        <div>
+          <img
+            src="./images/advertisement4.png"
+            class="advertismentImage"
+            alt="image"
+            srcset=""
+          />
+          <p class="advertismentParagraph1">
+            Best Perfume for Night Party that Lasts Long Perfume is an integral
+            part of an individuals personality. It is said that one's fragrance
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+
+      <h1 class="cartHeader2">Youtube Reviews</h1>
+
+      <div class="youtubeSecond">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fCyX2sUHufg"
+          class="youtubeimagePhoto2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/BGGXZyUVhFQ"
+          class="youtubeimagePhoto2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/22vk6rQFF8g"
+          class="youtubeimagePhoto2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MFYs1kYnNNU"
+          class="youtubeimagePhoto2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footerItem1">
+        <ul type="none">
+          <li><img src="./images/footerLogo.png" class="footerLogo" /></li>
+          <li class="gap">Phone : +91 7284852000</li>
+          <li class="gap">Email : info@Upsilonofficial.com</li>
+          <li class="gap">
+            <img src="./images/faceBook.png" alt="image" />
+            <img src="./images/Instagram.png" alt="image" srcset="" />
+            <img src="./images/youTube.png" alt="image" />
+          </li>
+        </ul>
+
+        <ul type="none">
+          <li><h4>Other Links</h4></li>
+          <li class="gap">Privacy Policy</li>
+          <li class="gap">Terms & Conditions</li>
+          <li class="gap">Refund & Cancelation Policy</li>
+          <li class="gap">Terms of Service</li>
+          <li class="gap">Refund Policy</li>
+        </ul>
+
+        <ul type="none">
+          <li><h4>Information</h4></li>
+          <li class="gap">Home</li>
+          <li class="gap">Shop</li>
+          <li class="gap">About Us</li>
+          <li class="gap">Contact Us</li>
+        </ul>
+
+        <ul type="none">
+          <li><h4>Newsletter</h4></li>
+          <li>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="footerInput"
+              placeholder=" E-mail Address"
+            />
+          </li>
+          <button class="footerButton">Subscribe</button>
+        </ul>
+      </div>
+
+      <div class="footerItem2">
+        <p class="footerItem2Content">
+          Copyright &copy; 2022, upsilonofficial.com
+        </p>
+        <p class="footerItem2Content2">
+          Designed & Developed By : <span>ZGC</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
